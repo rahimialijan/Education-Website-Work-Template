@@ -20,8 +20,162 @@ body{
 .wrapper{
     max-width: 1134px;
     margin: 0 auto;
+}
+
+header{
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+/* navigation bar menu*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    z-index: 100;
+    top:36px;
+
+}
+
+nav .logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Disign of Hero Section*/
+
+.hero-section{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left h1{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.hero-section .left p{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    width: 457px;
+}
+
+.hero-section .left{
+   flex: 1;
+}
+
+.hero-section .right{
+    align-items:flex-end;
+}
+.hero-section .right img{
+    height: 555px;
+    vertical-align:middle;
+}
+
+/* acheivment-cards */
+.acheivment-card{
+    position:absolute;
+    min-width:200px;
+}
+
+.acheivment-card .content{
+    border-radius: 24px;
+    background: #fff;
+    padding: 8px 32px ;
+    position: relative;
+    z-index: 10;
+}
+
+.acheivment-card.student-enrolled{
+    left:49%;
+    top:270px;
+}
+
+.acheivment-card h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color:var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.acheivment-card p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.acheivment-card .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+.acheivment-card.enrolled-rating{
+    left: 45%;
+    top: 470px;
     
 }
+
+.acheivment-card .content div{
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,5 +210,5 @@ body{
     
 }
 .btn.enroll-icon{
-    padding-left: 50px;
+    padding-left: 60px;
 }
