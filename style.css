@@ -1,0 +1,60 @@
+:root{
+    --orange-color: #DA722C;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-blue-color: #6F7DFB;
+    --light-color: #E8F7FB;
+}
+
+*,
+*::after
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    max-width: 1134px;
+    margin: 0 auto;
+    
+}
+
+
+
+/*buttons*/
+
+.btn{
+    display: inline-block;
+    padding: 15px;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark{
+    background: var(--dark-blue-color);
+}
+
+.btn.light{
+    background: var(--orange-color);
+}
+
+.btn.enroll-icon::before{
+    content: url("images/enroll-icon.svg");
+    position: absolute;
+    top: 50%;
+    left:32px;
+    transform: translateY(-50%);
+    
+    
+}
+.btn.enroll-icon{
+    padding-left: 50px;
+}
