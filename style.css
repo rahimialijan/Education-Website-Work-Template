@@ -589,6 +589,89 @@ footer .copyright{
     .hero-section .acheivment-cards{
         align-self: flex-start;
         margin: 40px;
+        
+    }
+    h2{
+        font-size: 40px;
+    }
+    .testimonials-section{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 50px;
     }
 
+    .testimonials-section .testimonial-card{
+        width: 100%;
+        margin-bottom: 40px;
+        
+    }
+    .testimonials-section .testimonial-card:last-child:before{
+        top: -40px;
+        height: calc(100% + 80px);
+        left: 60px;
+    }
+    .testimonials-section .testimonial-card:last-child{
+        transform: translateY(0px);
+        margin-bottom: 0;
+    }
+    .testimonials-section .desktop-btn{
+        display: none;
+    }
+    .testimonials-section .mobile-btn{
+        display: block;
+        align-self: flex-end;
+        order: 3;
+    }
+    .testimonials-section .left{
+        order: 2;
+        gap: 40px;
+    }
+    .testimonials-section .right{
+        order: 1;
+    }
+    .testimonials-section .right p{
+        display: inline;
+    }
+    .testimonials-section h2{
+        margin-bottom: 20px;
+    }
+    .courses-section .course-cards{
+        flex-direction: column;
+        gap:80px;
+        
+    }
+    .courses-section .course-cards .course-card{
+        margin: 0;
+        width: 632px;
+        height: 418px;
+        width:92%;
+
+    }
+    .courses-section h2{
+        margin-bottom: 40px;
+    }    
+    
+    .courses-section .course-card img{
+        height: 260px;
+        width: 568px;
+        object-fit:fill;
+    }
+    .courses-section .course-card h3{
+        font-size:24px ;
+    }
+    .courses-section .wrapper .btn{
+        right: 100px;
+    }
+    .courses-section .course-card:last-child{
+        margin-bottom: 50px;
+    }
+    footer .wrapper .links-container{
+        grid-template-columns: 1fr 1fr;
+   
+    }
+    footer .wrapper .links-container .links:last-child{
+        grid-column: 1/3;
+    }
 }
+
+
