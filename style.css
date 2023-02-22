@@ -714,7 +714,7 @@ footer .copyright{
         justify-content: center;
         z-index: 200;
         display: flex;
-        transition: all 400ms ease;
+        transition: all 600ms  ease;
      }
      .mobile-menu-container.active{
         left:0;
@@ -743,8 +743,97 @@ footer .copyright{
         color: #fff;
         text-decoration: none;
         font-size: 18px;
-     }
-   
+     }  
+}
+
+/*Small Mobile Style*/
+@media(max-width:700px){
+    .wrapper{
+        padding: 0 32px;
+    }
+    .hero-section .left p{
+        width: 100%;
+    }
+    .app-section .app-buttons{
+        flex-direction: column;
+    }
+    nav.mobile-nav{
+        padding: 32px;
+    }
+    nav.mobile-nav.scrolled{
+        padding: 8px 32px;
+    }
+    .mobile-menu-container .close-icon{
+        right: 32px;
+    }
+    .hero-section .left h1{
+        font-size: 36px;
+    }
+    .hero-section .right img{
+        height: 400px;
+        transform: translateX(50px);
+    }
+    .hero-section .right{
+        transform: translateX(30px);
+        transform: translateY(20px);
+        overflow: hidden;
+    }
+    .acheivment-card h3{
+        font-size: 30px;
+    }
+    .hero-section .acheivment-cards{
+        margin: 0;
+        transform: translateY(-50px);
+    }
+    .hero-section .acheivment-card{
+        margin-bottom: 48px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .testimonials-section .testimonial-card .info h4{
+        font-size: 18px;
+    }
+    .testimonials-section .testimonial-card .info p.company{
+        font-size: 14px;
+    }
+    .testimonials-section .testimonial-card img{
+        width: 100px;
+        height: 100px;
+    }
+    .courses-section .wrapper{
+        padding: 0;
+    }
+    .courses-section .course-cards .course-card img{
+        height: 240px;
+    }
+    .courses-section .wrapper .btn{
+        right: 32px;
+    }
+    footer .wrapper .links-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    footer .wrapper .links-container .links:last-child{
+        grid-column: 1/2;
+    }
+    footer ul{
+        padding: 0;
+    }
+    footer form .submit-btn{
+       transform: translateX(-150%);
+       margin-left: 40%;
+       margin-top: 5%;
+       
+    }
+    .links-container{
+        justify-content: center;
+    }
+    footer .copy-right{
+        margin-top: 80px;
+        text-align: center;
+    }
 }
 
 
