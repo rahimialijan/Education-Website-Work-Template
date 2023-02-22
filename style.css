@@ -20,8 +20,6 @@ body{
 .wrapper{
     max-width: 1134px;
     margin: 0 auto;
-    
-       
 }
 
 header{
@@ -37,9 +35,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     position:fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
+    width: 1110px;
     z-index: 100;
     padding-top: 20px;
     top:0;
@@ -53,6 +49,7 @@ nav.scrolled{
     border-radius: 0 0 8px 8px;
     top: 0;
     padding: 20px 12px;  
+    align-self: center;
 }
 
 nav .logo{
@@ -116,15 +113,19 @@ nav ul li a{
 
 .hero-section .left{
    flex: 1;
+   
 }
 
 .hero-section .right{
     align-items:flex-end;
-  
+    display: flex;
+    
+   
 }
 .hero-section .right img{
     height: 490px;
     vertical-align:middle;
+    
 }
 
 /* acheivment-cards */
@@ -139,6 +140,16 @@ nav ul li a{
     padding: 8px 32px ;
     position: relative;
     z-index: 10;
+    text-align: center;
+}
+.hero-section .acheivment-cards .acheivment-card .content div{
+    justify-content: center;
+    
+}
+.hero-section .acheivment-cards .acheivment-card .content img{
+    transform: translateX(-10px);
+    align-self: center;
+    
 }
 
 .acheivment-card.student-enrolled{
@@ -471,7 +482,7 @@ footer form input  {
     font-size: 16px;
     color: #000000;
     border-radius: 8px;
-    padding: 8px 32px;
+    padding: 8px 160px 8px 32px;
     border: none;
     width: 521px;
     
@@ -542,12 +553,16 @@ footer .copyright{
     }
     nav{
         width: 100%;
-        left: 0;
-        right: 0;
-        padding: 36px 37px;
+        left: 60px;
+        right: 60px;
+        padding: 36px 0px;
+        transform: translateX(-60px);
+        
     }
     nav.scrolled{
-        padding: 16px 50px;
+        padding: 16px 0px;
+       
+
     }
     header,
     .hero-section,
@@ -820,6 +835,9 @@ footer .copyright{
     }
     footer ul{
         padding: 0;
+    }
+    footer form input{
+        padding: 10px 32px;
     }
     footer form .submit-btn{
        transform: translateX(-150%);
